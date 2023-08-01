@@ -3,6 +3,7 @@ import GoogleTranslateEngine from './engines/google'
 import GoogleTranslateCnEngine from './engines/google-cn'
 import DeepLTranslateEngine from './engines/deepl'
 import LibreTranslateEngine from './engines/libretranslate'
+import CustomTranslateEngine from './engines/custom'
 
 export class Translator {
   engines: Record<string, TranslateEngine> ={
@@ -10,6 +11,7 @@ export class Translator {
     'google-cn': new GoogleTranslateCnEngine(),
     'deepl': new DeepLTranslateEngine(),
     'libretranslate': new LibreTranslateEngine(),
+    'custom': new CustomTranslateEngine(),
   }
 
   async translate(options: TranslateOptions & { engine: string }) {

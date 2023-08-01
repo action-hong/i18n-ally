@@ -1,7 +1,7 @@
 {
-  "publisher": "lokalise",
+  "publisher": "kkopite",
   "name": "i18n-ally",
-  "version": "2.10.0",
+  "version": "2.11.0",
   "displayName": "i18n Ally",
   "description": "🌍 All in one i18n extension for VS Code",
   "keywords": [
@@ -1024,7 +1024,8 @@
               "google",
               "google-cn",
               "deepl",
-              "libretranslate"
+              "libretranslate",
+              "custom"
             ]
           },
           "default": [
@@ -1226,6 +1227,25 @@
         },
         "i18n-ally.keyMatchRegex": {
           "deprecationMessage": "Deprecated. Use \"i18n-ally.regex.key\" instead."
+        },
+        "i18n-ally.translate.customServices": {
+          "type": "array",
+          "description": "自定义术语表",
+          "items": {
+            "type": "object",
+            "properties": {
+              "category": {
+                "type": "string",
+                "enum": [
+                  "http",
+                  "file"
+                ]
+              },
+              "url": {
+                "type": "string"
+              }
+            }
+          }
         },
         "vue-i18n-ally.localesPaths": {
           "deprecationMessage": "%config.deprecated%"

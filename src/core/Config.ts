@@ -559,4 +559,8 @@ export class Config {
   static get telemetry(): boolean {
     return workspace.getConfiguration().get('telemetry.enableTelemetry') as boolean
   }
+
+  static getCustomServices(): Array<{ category: 'http' | 'file'; url: string }> {
+    return this.getConfig('translate.customServices') || []
+  }
 }

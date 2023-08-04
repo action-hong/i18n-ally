@@ -1,8 +1,8 @@
 {
   "publisher": "kkopite",
-  "name": "i18n-ally",
+  "name": "i18n-kk",
   "version": "2.11.0",
-  "displayName": "i18n Ally",
+  "displayName": "i18n kk",
   "description": "🌍 All in one i18n extension for VS Code",
   "keywords": [
     "vue",
